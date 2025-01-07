@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #99A87D;
+    color: white;
+}
+
+/* Estilos del menú de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #677a63;
+}
+
+.navbar .logo-img {
+    width: 100px;
+    height: auto;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.navbar .menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Enlaces del menú */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Imagen responsive */
+.image-container {
+    text-align: center;
+    margin-top: 15px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.responsive-img {
+    /* width: 100%; */
+    height: 20rem;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Títulos */
+.titulo {
+    margin-top: 2rem;
+    text-align: center;
+    font-family: "Sour Gummy", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: "Sour Gummy", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+p {
+    margin-bottom: 10px;
+    color: black;
+    font-size: 16px;
+    font-family: "Sour Gummy", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Estilos de las secciones */
+.seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #99A87D;
+    flex-wrap: wrap;  
+}
+
+.invertido {
+    flex-direction: row-reverse;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;  
+}
+
+.imagenContaminacion {
+    width: 50%;  
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.informacion {
+    width: 50%;  
+    padding: 20px;
+    background-color: #EAF4DB;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    line-height: 1.4;
+    font-family: "Sour Gummy", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+p {
+    font-size: 16px;
+    color: black;
+    font-family: "Sour Gummy", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Medios de Pantalla */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Ajustes para las secciones en pantallas pequeñas */
+    .contenedor {
+        flex-direction: column;  
+        width: 100%;
+    }
+
+    .imagenContaminacion {
+        width: 100%;  
+        height: 12rem;
+    }
+
+    .informacion {
+        width: 100%;  
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
